@@ -1,10 +1,10 @@
+import path from "path";
+import { fileURLToPath } from "url";
 import * as dotenv from "dotenv";
 dotenv.config();
 import express from "express";
 import cors from "cors";
 import OpenAI from "openai";
-import path from "path";
-import { fileURLToPath } from "url";
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
