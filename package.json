@@ -1,12 +1,16 @@
 {
   "name": "your-project",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "build": "cd client && npm install && npm run build",
     "start": "cd server && node server.js",
     "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\""
   },
   "dependencies": {
-    "concurrently": "^8.0.1"
+    "concurrently": "^8.0.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "openai": "^4.0.0"
   }
 }
